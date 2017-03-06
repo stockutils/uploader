@@ -8,4 +8,4 @@ $router->get('/uploader/api-key/{site_name}', 'Uploader/ApiKey', true, 'm_api_ke
        ->setDefault('_noView', true);
 $router->post('/uploader/api-key/{site_name}', null, true, 'm_api_keys as api_keys');
 
-$router->get('/uploader/authorize/{service}', 'Uploader/Authorize', true);
+$router->get('/uploader/authorize/{service}', 'Uploader/Authorize', true)->setDefault('_noView', true);
